@@ -26,6 +26,7 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
           glow: "hsl(var(--primary-glow))",
+          bright: "hsl(var(--primary-bright))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -75,11 +76,13 @@ export default {
         'soft': 'var(--shadow-soft)',
         'glass': 'var(--shadow-glass)',
         'glow': 'var(--shadow-glow)',
+        'glow-bright': 'var(--shadow-glow-bright)',
       },
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-card': 'var(--gradient-card)',
         'gradient-glass': 'var(--gradient-glass)',
+        'gradient-eco': 'var(--gradient-eco)',
       },
       keyframes: {
         "accordion-down": {
@@ -144,6 +147,22 @@ export default {
             boxShadow: "0 0 40px hsl(var(--primary) / 0.6)",
           },
         },
+        "glow-pulse": {
+          "0%, 100%": {
+            boxShadow: "0 0 25px hsl(var(--primary-glow) / 0.4), 0 0 50px hsl(var(--primary) / 0.2)",
+          },
+          "50%": {
+            boxShadow: "0 0 35px hsl(var(--primary-glow) / 0.7), 0 0 70px hsl(var(--primary) / 0.4)",
+          },
+        },
+        "shimmer": {
+          "0%": {
+            backgroundPosition: "-200% 0",
+          },
+          "100%": {
+            backgroundPosition: "200% 0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -153,6 +172,8 @@ export default {
         "scale-in": "scale-in 0.4s ease-out",
         "float": "float 3s ease-in-out infinite",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "glow-pulse": "glow-pulse 3s ease-in-out infinite",
+        "shimmer": "shimmer 2s linear infinite",
       },
     },
   },

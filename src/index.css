@@ -12,10 +12,11 @@ All colors MUST be HSL for perfect theme switching.
     --background: 0 0% 100%;
     --foreground: 215 25% 27%;
 
-    /* Brand colors - Eco-inspired */
-    --primary: 160 70% 40%; /* Darker emerald green */
+    /* Brand colors - Deep Forest Eco Green */
+    --primary: 152 65% 28%; /* Deep forest green */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 160 80% 65%;
+    --primary-glow: 152 70% 45%;
+    --primary-bright: 152 80% 35%;
     
     --accent: 199 95% 61%; /* Sky blue #38BDF8 */
     --accent-foreground: 0 0% 100%;
@@ -43,14 +44,16 @@ All colors MUST be HSL for perfect theme switching.
     --ring: 160 50% 52%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(160 50% 52%), hsl(199 95% 61%));
+    --gradient-hero: linear-gradient(135deg, hsl(152 65% 28%), hsl(199 95% 61%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(210 20% 98% / 0.6));
     --gradient-glass: linear-gradient(145deg, hsl(0 0% 100% / 0.1), hsl(210 20% 95% / 0.1));
+    --gradient-eco: linear-gradient(135deg, hsl(152 65% 28%), hsl(152 80% 35%));
     
     /* Shadows */
     --shadow-soft: 0 4px 20px hsl(215 25% 27% / 0.08);
     --shadow-glass: 0 8px 32px hsl(215 25% 27% / 0.12);
-    --shadow-glow: 0 0 40px hsl(160 50% 52% / 0.3);
+    --shadow-glow: 0 0 40px hsl(152 65% 28% / 0.4);
+    --shadow-glow-bright: 0 0 60px hsl(152 70% 45% / 0.6);
 
     --radius: 0.5rem;
 
@@ -77,9 +80,10 @@ All colors MUST be HSL for perfect theme switching.
     --foreground: 210 20% 95%;
 
     /* Brand colors remain vibrant in dark mode */
-    --primary: 160 75% 45%;
+    --primary: 152 70% 32%; /* Deeper forest green for dark mode */
     --primary-foreground: 215 25% 15%;
-    --primary-glow: 160 90% 70%;
+    --primary-glow: 152 75% 50%;
+    --primary-bright: 152 85% 40%;
     
     --accent: 199 95% 65%;
     --accent-foreground: 215 25% 15%;
@@ -107,14 +111,16 @@ All colors MUST be HSL for perfect theme switching.
     --ring: 160 60% 55%;
 
     /* Dark gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(160 60% 35%), hsl(199 85% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(152 70% 32%), hsl(199 85% 45%));
     --gradient-card: linear-gradient(145deg, hsl(215 25% 25% / 0.9), hsl(215 25% 20% / 0.6));
     --gradient-glass: linear-gradient(145deg, hsl(215 25% 30% / 0.1), hsl(215 25% 25% / 0.1));
+    --gradient-eco: linear-gradient(135deg, hsl(152 70% 32%), hsl(152 85% 40%));
     
     /* Dark shadows */
     --shadow-soft: 0 4px 20px hsl(215 25% 10% / 0.4);
     --shadow-glass: 0 8px 32px hsl(215 25% 10% / 0.6);
-    --shadow-glow: 0 0 40px hsl(160 60% 35% / 0.4);
+    --shadow-glow: 0 0 40px hsl(152 70% 32% / 0.5);
+    --shadow-glow-bright: 0 0 80px hsl(152 75% 50% / 0.7);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
