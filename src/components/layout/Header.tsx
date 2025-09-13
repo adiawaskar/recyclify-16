@@ -31,7 +31,7 @@ const Header = () => {
     { name: "Marketplace", href: "/marketplace", icon: Recycle },
     { name: "Ask AI", href: "/copilot", icon: Bot },
     { name: "Impact", href: "/impact", icon: TrendingUp },
-    { name: "Community", href: "/community", icon: Users },
+    
     { name: "Suppliers", href: "/suppliers", icon: Building2 },
     { name: "Analytics", href: "/analytics", icon: BarChart3 },
     { name: "Donations", href: "/donations", icon: Heart },

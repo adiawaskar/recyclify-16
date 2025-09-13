@@ -163,16 +163,21 @@ const Analytics = () => {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-2 pt-2">
-            <Button size="sm" className="flex-1 gap-2">
-              <Eye className="h-4 w-4" />
-              <span className="hidden sm:inline">View</span>
-            </Button>
-            <Button variant="outline" size="sm" className="gap-2">
-              <Download className="h-4 w-4" />
-            </Button>
-            <Button variant="outline" size="sm" className="gap-2">
+          <div className="flex flex-col gap-2 pt-2">
+            <div className="flex gap-2">
+              <Button size="sm" className="flex-1 gap-2">
+                <Eye className="h-4 w-4" />
+                <span className="hidden sm:inline">View Report</span>
+                <span className="sm:hidden">View</span>
+              </Button>
+              <Button variant="outline" size="sm" className="gap-2">
+                <Download className="h-4 w-4" />
+                <span className="hidden sm:inline">Download</span>
+              </Button>
+            </div>
+            <Button variant="outline" size="sm" className="w-full gap-2">
               <Share2 className="h-4 w-4" />
+              <span>Share Report</span>
             </Button>
           </div>
         </CardContent>

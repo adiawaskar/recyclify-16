@@ -13,7 +13,7 @@ import Analytics from "./pages/Analytics";
 import Profile from "./pages/Profile";
 import ImpactTracker from "./pages/ImpactTracker";
 import Suppliers from "./pages/Suppliers";
-import Community from "./pages/Community";
+
 import Training from "./pages/Training";
 import Donations from "./pages/Donations";
 import CarbonTracker from "./pages/CarbonTracker";
@@ -40,7 +40,7 @@ const App = () => (
             <Route path="/marketplace" element={<Marketplace />} />
             <Route path="/copilot" element={<Copilot />} />
             <Route path="/impact" element={<ImpactTracker />} />
-            <Route path="/community" element={<Community />} />
+            
             <Route path="/suppliers" element={<Suppliers />} />
             <Route path="/analytics" element={<Analytics />} />
             <Route path="/training" element={<Training />} />
