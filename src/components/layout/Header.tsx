@@ -16,7 +16,6 @@ import {
   Heart,
   Users,
   Calculator,
-  BookOpen,
   FileText
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -35,7 +34,6 @@ const Header = () => {
     { name: "Community", href: "/community", icon: Users },
     { name: "Suppliers", href: "/suppliers", icon: Building2 },
     { name: "Analytics", href: "/analytics", icon: BarChart3 },
-    { name: "Training", href: "/training", icon: BookOpen },
     { name: "Donations", href: "/donations", icon: Heart },
     { name: "Carbon Tracker", href: "/carbon-tracker", icon: Calculator },
     { name: "Reports", href: "/reports", icon: FileText },
