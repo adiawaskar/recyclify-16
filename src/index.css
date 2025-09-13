@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GreenChain Design System - Eco-conscious, premium UI
+All colors MUST be HSL for perfect theme switching.
+*/
+
+@layer base {
+  :root {
+    /* Core palette */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 27%;
+
+    /* Brand colors - Eco-inspired */
+    --primary: 160 70% 40%; /* Darker emerald green */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 160 80% 65%;
+    
+    --accent: 199 95% 61%; /* Sky blue #38BDF8 */
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 199 100% 85%;
+
+    /* UI surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+    --card-glass: 0 0% 100% / 0.8;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --secondary: 210 20% 95%;
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 95%;
+    --ring: 160 50% 52%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(160 50% 52%), hsl(199 95% 61%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(210 20% 98% / 0.6));
+    --gradient-glass: linear-gradient(145deg, hsl(0 0% 100% / 0.1), hsl(210 20% 95% / 0.1));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(215 25% 27% / 0.08);
+    --shadow-glass: 0 8px 32px hsl(215 25% 27% / 0.12);
+    --shadow-glow: 0 0 40px hsl(160 50% 52% / 0.3);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode - Slate backgrounds */
+    --background: 215 25% 15%; /* Slate #1E293B */
+    --foreground: 210 20% 95%;
+
+    /* Brand colors remain vibrant in dark mode */
+    --primary: 160 75% 45%;
+    --primary-foreground: 215 25% 15%;
+    --primary-glow: 160 90% 70%;
+    
+    --accent: 199 95% 65%;
+    --accent-foreground: 215 25% 15%;
+    --accent-glow: 199 100% 80%;
+
+    /* Dark UI surfaces */
+    --card: 215 25% 20%;
+    --card-foreground: 210 20% 95%;
+    --card-glass: 215 25% 20% / 0.8;
+    
+    --popover: 215 25% 20%;
+    --popover-foreground: 210 20% 95%;
+
+    --secondary: 215 25% 25%;
+    --secondary-foreground: 210 20% 95%;
+
+    --muted: 215 25% 25%;
+    --muted-foreground: 215 15% 65%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 210 20% 95%;
+
+    --border: 215 25% 30%;
+    --input: 215 25% 25%;
+    --ring: 160 60% 55%;
+
+    /* Dark gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(160 60% 35%), hsl(199 85% 45%));
+    --gradient-card: linear-gradient(145deg, hsl(215 25% 25% / 0.9), hsl(215 25% 20% / 0.6));
+    --gradient-glass: linear-gradient(145deg, hsl(215 25% 30% / 0.1), hsl(215 25% 25% / 0.1));
+    
+    /* Dark shadows */
+    --shadow-soft: 0 4px 20px hsl(215 25% 10% / 0.4);
+    --shadow-glass: 0 8px 32px hsl(215 25% 10% / 0.6);
+    --shadow-glow: 0 0 40px hsl(160 60% 35% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Glass morphism cards */
+  .glass-card {
+    background: hsl(var(--card-glass));
+    backdrop-filter: blur(16px);
+    border: 1px solid hsl(var(--border) / 0.2);
+    box-shadow: var(--shadow-glass);
+  }
+  
+  /* Gradient backgrounds */
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  /* Glow effects */
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+}
